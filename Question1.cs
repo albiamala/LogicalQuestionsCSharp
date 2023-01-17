@@ -6,9 +6,9 @@
 using System;
 using System.ComponentModel;
 
-String[] passengernames = new string[5];
+String[] passengernames = new string[10];
 int flag = 0;
-for (int i = 0; i < 5; i++)
+for (int i = 0; i < 10; i++)
 {
     Console.WriteLine("Enter passenger name: ");
     string name = Console.ReadLine();
@@ -37,7 +37,7 @@ Console.WriteLine("Enter the name to search: ");
 var search = Console.ReadLine();
 
 
-for (int i = 0; i < 5; i++)
+for (int i = 0; i < 10; i++)
 {
     if (passengernames[i] == search)
     {
@@ -87,7 +87,7 @@ for (int i = 0; i < passengernames.Length; i++)
 
 //SPLIT NAMES AT SPACE
 
-    for (int i = 0; i < 5; i++)
+    for (int i = 0; i < 10; i++)
     {
         string[] splited = passengernames[i].Split(" ");
     
