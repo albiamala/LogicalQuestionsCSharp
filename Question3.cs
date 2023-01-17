@@ -3,8 +3,8 @@
 using System;
 
 int flag = 0;
-double[] flightfare = new double[5];
-for (int i = 0; i < 5; i++)
+double[] flightfare = new double[10];
+for (int i = 0; i < 10; i++)
 {
     Console.WriteLine("Enter flight fare : ");
     double fare = Convert.ToDouble(Console.ReadLine());
@@ -33,7 +33,7 @@ Console.WriteLine("Enter the fare to search: ");
 double search = Convert.ToDouble(Console.ReadLine());
 
 
-for (int i = 0; i < 5; i++)
+for (int i = 0; i < 10; i++)
 {
     if (flightfare[i] == search)
     {
@@ -61,9 +61,9 @@ if (flag == 0)
    Boolean f = false;
 
 
-   for (int i = 0; i < 5; i++)
+   for (int i = 0; i < 10; i++)
    {
-       for (int j = i + 1; j <= 4; j++)
+       for (int j = i + 1; j <= 9; j++)
        {
            if (flightfare[i] == flightfare[j])
            {
